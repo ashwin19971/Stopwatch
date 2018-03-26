@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:view="com.example.ashwingiri.recycler_view.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:gravity="center"
+        android:id="@+id/tvResult"
+        android:text="00:00:000"
+        android:textColor="#ffff"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:text="@string/Start"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:padding="3dp"
+            android:id="@+id/btStart"
+            android:textColor="#3FFF00"
+            android:textStyle="italic"
+            android:background="@drawable/round_button_start"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btLap"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Lap"
+            android:textColor="#ffff"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:background="@drawable/round_button_lap"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btStop"
+            android:textAllCaps="false"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_button_stop"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:padding="3dp"
+            android:textStyle="italic"
+            android:textColor="#DC143C"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btReset"
+            android:layout_margin="3dp"
+            android:background="@drawable/round_button_lap"
+            android:layout_width="wrap_content"
+            android:text="Reset"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSw"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        />
+
+</LinearLayout>
