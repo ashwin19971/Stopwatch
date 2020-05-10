@@ -1,5 +1,5 @@
 # Stopwatch
-A android stopwatch app with IPhone UI
+An android stopwatch app with IPhone UI
 
 
 ![1](https://user-images.githubusercontent.com/34717765/41952856-cc8a4042-79ef-11e8-90dc-462b26a89235.png)
